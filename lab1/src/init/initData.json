@@ -1,0 +1,83 @@
+{
+  "type": "directory",
+  "rights":
+  {
+    "read": ["user", "admin"],
+    "write": ["user", "admin"],
+    "delete": ["admin"]
+  },
+  "files":
+  {
+    "file1.txt":
+    {
+      "type": "file",
+      "rights":
+      {
+        "read": ["user", "admin"],
+        "write": ["user", "admin"],
+        "delete": ["user", "admin"]
+      },
+      "content": "file content"
+    },
+    "dir1":
+    {
+      "type": "directory",
+      "rights":
+      {
+        "read": ["user", "admin"],
+        "write": ["user"],
+        "delete": ["user"]
+      },
+
+      "dir3":
+      {
+        "type": "directory",
+        "rights":
+        {
+          "read": ["user", "admin"],
+          "write": ["user"],
+          "delete": ["user"]
+        },
+
+      "files":
+      {
+        "myFile1.txt":
+        {
+          "type": "file",
+          "rights":
+          {
+            "read": ["user", "admin"],
+            "write": ["user"],
+            "delete": ["user"]
+          },
+          "content": "I love you. You love me. Let`s play in Monopolia"
+        }
+      }
+    },
+
+    "dir2":
+    {
+      "type": "directory",
+      "rights":
+      {
+        "read": ["admin"],
+        "write": ["admin"],
+        "delete": ["admin"]
+      },
+      "files":
+      {
+        "myFile2.txt":
+        {
+          "type": "file",
+          "rights":
+          {
+            "read": ["user", "admin"],
+            "write": ["admin"],
+            "delete": ["admin"]
+          },
+          "content": " 'OMG' something like that is used to say 'OH, MY, GOD'"
+        }
+      }
+    }
+  }
+}
