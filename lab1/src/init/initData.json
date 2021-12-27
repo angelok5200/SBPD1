@@ -4,7 +4,7 @@
   {
     "read": ["user", "admin"],
     "write": ["user", "admin"],
-    "delete": ["admin"]
+    "delete": ["admin", "adminh"]
   },
   "files":
   {
@@ -13,9 +13,9 @@
       "type": "file",
       "rights":
       {
-        "read": ["user", "admin"],
-        "write": ["user", "admin"],
-        "delete": ["user", "admin"]
+        "read": ["user", "adminh"],
+        "write": ["user", "adminh"],
+        "delete": ["user", "adminh"]
       },
       "content": "file content"
     },
@@ -34,7 +34,7 @@
         "type": "directory",
         "rights":
         {
-          "read": ["user", "admin"],
+          "read": ["user", "adminh"],
           "write": ["user"],
           "delete": ["user"]
         },
@@ -62,7 +62,7 @@
       {
         "read": ["admin"],
         "write": ["admin"],
-        "delete": ["admin"]
+        "delete": ["adminh"]
       },
       "files":
       {
